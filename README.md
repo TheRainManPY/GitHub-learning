@@ -20,4 +20,4 @@
     + 1）git log --graph
 - 5.merge branch with no-ff
     + 1）git merge --no-ff -m'合并分支并不使用Fast forward模式' <branchname>
-    + 2）好处是git会将这次的合并添加一个commit，方便时光穿梭
+    + 2）采用ff模式的合并是把master的指针指到dev的最新commit上，所以这两个分支的最新commit_id是一样的。但采用--no-ff模式合并分支，由于不能把master的指针直接指向dev分支的最新commit，master分支只能进行一次提交操作，所以就会有内容一模一样，commit_id不同的情况。
