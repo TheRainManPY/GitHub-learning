@@ -17,5 +17,7 @@
 - 3.merge branch
     + 1）*master: git merge <branchname>
 - 4.watch branch merge
-    + git log --graph
-
+    + 1）git log --graph
+- 5.merge branch with no-ff
+    + 1）git merge --no-ff -m'合并分支并不使用Fast forward模式' <branchname>
+    + 2）好处是git会将这次的合并添加一个commit，方便时光穿梭
