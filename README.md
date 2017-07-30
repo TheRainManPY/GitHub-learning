@@ -17,5 +17,11 @@
 - 3.merge branch
     + 1）*master: git merge <branchname>
 - 4.watch branch merge
-    + git log --graph
+    + 1）git log --graph
+- 5.save work status
+    + 1）git stash 保存当前工作，未commit，已add的工作内容
+    + 2）git stash list 查看保存的工作进度
+    + 3）git stash apply stash@{index}恢复指定
+    + 4）git stash drop/git stash pop删除
+    + 5）这类似于一个list？
 
