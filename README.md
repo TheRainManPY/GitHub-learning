@@ -33,7 +33,8 @@
     + 2）也可以创建本地仓库后使用 git remote add origin git@github.com:xxxx/xxxx 添加远程库地址
     + 3）上面两种方法都只会同步下来master分支，若要同步其他分支需使用：git checkout -b <branchname> origin/<branchname> 在本地创建和远程分支对应的分支
     + 4）再gitpull同步远程分支，若出现no tracking information，则说明本地分支和远程分支的链接关系没有创建，使用：git branch --set-upstream <branchname> origin/<branch-name>
-- 7.tag
+#### Git相关功能
+- 1.tag
     + 1）git tag <name> 新建标签默认对应HEAD指向的commit-id,也可以指定一个commit-id
     + 2）git tag -a <tagname> -m'blablablabla...'可以指定标签信息
     + 3）git tag -s <tagname> -m'blablblabla...'可以用PGP签名标签
@@ -42,3 +43,7 @@
     + 6）git push origin --tags 可以推送全部未推送的本地标签
     + 7）git tag -d <tagname> 可以删除一个本地标签
     + 8) git push origin :refs/tags/<tagname> 可以删除一个远程标签
+- 2.ignore
+    + 1）https://github.com/github/gitignore 各种ignore配置
+    + 2）git add -f test.pyc 可以不管ignore限制，强制添加文件
+    + 3）git check-ignore -v test.pyc 可以查看是哪条ignore配置限制了文件上传
