@@ -14,6 +14,7 @@
     + 2）git branch 查看project中所有分支
 - 2.delete branch
     + 1）git branch -d <branchname>
+    + 2）if branch is not merge,use: git branch -D <branchname>
 - 3.merge branch
     + 1）*master: git merge <branchname>
 - 4.watch branch merge
