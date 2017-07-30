@@ -38,3 +38,7 @@
     + 2）git tag -a <tagname> -m'blablablabla...'可以指定标签信息
     + 3）git tag -s <tagname> -m'blablblabla...'可以用PGP签名标签
     + 4）命令git tag 可以查看所有标签
+    + 5）git push origin <tagname> 可以推送一个本地标签
+    + 6）git push origin --tags 可以推送全部未推送的本地标签
+    + 7）git tag -d <tagname> 可以删除一个本地标签
+    + 8) git push origin :refs/tags/<tagname> 可以删除一个远程标签
