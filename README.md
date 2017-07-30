@@ -28,3 +28,11 @@
     + 3）git stash apply stash@{index}恢复指定
     + 4）git stash drop/git stash pop删除
     + 5）这类似于一个list？
+<<<<<<< HEAD
+=======
+- 6.多人协作
+    + 1）可以直接 git clone git@github.com:xxxx/xxxx
+    + 2）也可以创建本地仓库后使用 git remote add origin git@github.com:xxxx/xxxx 添加远程库地址
+    + 3）上面两种方法都只会同步下来master分支，若要同步其他分支需使用：git checkout -b <branchname> origin/<branchname> 在本地创建和远程分支对应的分支
+    + 4）再gitpull同步远程分支，若出现no tracking information，则说明本地分支和远程分支的链接关系没有创建，使用：git branch --set-upstream <branchname> origin/<branch-name>
+>>>>>>> dev
