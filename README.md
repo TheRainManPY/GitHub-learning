@@ -47,8 +47,8 @@
     + 1）https://github.com/github/gitignore 各种ignore配置
     + 2）git add -f test.pyc 可以不管ignore限制，强制添加文件
     + 3）git check-ignore -v test.pyc 可以查看是哪条ignore配置限制了文件上传
-#### 配置别名
-    + 1）global 全局对当前用户(系统用户)起作用的，不加只对当前仓库起作用
+- 3. 配置别名
+    + 1）--global 全局对当前用户(系统用户)起作用的，不加只对当前仓库起作用
          + 仓库的配置文件 .git/config
          + 用户的配置文件 用户目录/.gitconfig
     + 2）git config --global alias.st status
